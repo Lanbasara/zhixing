@@ -1,14 +1,14 @@
 {
   "format": 1,
   "name": "zhixing",
-  "version": "0.3.1",
+  "version": "0.3.3",
   "files": {
     ".claude-plugin/plugin.json": {
-      "sha256": "cc9c609c003cd737926b7ab50bbaf2ba361757c93bea357c938fbd4626285934",
+      "sha256": "1853c456e00b3172e870d6d46a94adaef0355a84d20d4d402e7fdfe66e653382",
       "mode": 420
     },
     ".codex-plugin/plugin.json": {
-      "sha256": "8f44995e697cdc382dbaf8328273a397b952169dc61bb62cb42c086e0d82e950",
+      "sha256": "c1aa379b9bd138b57d7638090fec69733a6f8eb7d389c9c296697d2729c962de",
       "mode": 420
     },
     "cordis.patch.yml": {
@@ -20,7 +20,7 @@
       "mode": 420
     },
     "host/catalog.json": {
-      "sha256": "e2cf029700a098ebece0c077b61986fc8676d951b65fbc21bf9291445cae2aa8",
+      "sha256": "9ef2bfcec938ee84ef301b3eb90ebc2249698767af9b62f711192ff93244cbb5",
       "mode": 420
     },
     "host/dsh.mjs": {
@@ -28,11 +28,11 @@
       "mode": 420
     },
     "package.json": {
-      "sha256": "dc1dd274a0492e20adc4015f748177b73ee1a930bc7422480913bfc85c19d1a7",
+      "sha256": "438129ad2778ef2ddd77a75636e0668c9237f49b3580cff98bf885123329ab61",
       "mode": 420
     },
     "plugin.json": {
-      "sha256": "cc9c609c003cd737926b7ab50bbaf2ba361757c93bea357c938fbd4626285934",
+      "sha256": "1853c456e00b3172e870d6d46a94adaef0355a84d20d4d402e7fdfe66e653382",
       "mode": 420
     },
     "principles/change.md": {
@@ -156,7 +156,7 @@
       "mode": 420
     },
     "skills/setup/SKILL.md": {
-      "sha256": "3a38f3b46bafeed281440de9e9148c0ff82854ea348595479918bd60b5fdfc2d",
+      "sha256": "be6c80a4de9b549a4cc52ad415600d5747d9540eb67e494c1c5dddb1cc7a2f5f",
       "mode": 420
     },
     "skills/setup/agents/openai.yaml": {
