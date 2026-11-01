@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -63,6 +64,34 @@ class DeliveryTests(unittest.TestCase):
         self.assertEqual({p.split("/")[1] for p in self.payload if p.startswith("skills/")}, check.SKILLS)
         (package / "references/context.md").unlink()
         self.assertTrue(check.check(package))
+
+    def test_user_documentation_is_independent_of_maintainer_inputs(self):
+        source = self.root / "source"
+        shutil.copytree(bundle.ROOT, source, ignore=shutil.ignore_patterns(
+            ".git", "plugin", "__pycache__", ".venv", ".env*", "node_modules"))
+        before = bundle.assemble(source)
+        for name in ("README.md", "AGENTS.md", "RELEASING.md",
+                     ".agents/skills/zhixing-release/SKILL.md",
+                     ".github/workflows/ci.yml", "scripts/release.py", "qa/maintainer.txt"):
+            path = source / name
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text("Changed maintainer-only input\n", encoding="utf-8")
+        self.assertTrue(before == bundle.assemble(source),
+                        "Maintainer-only changes leaked into the published payload")
+
+        guide = source / "USAGE.md"
+        guide.write_text(guide.read_text(encoding="utf-8") + "\nUpdated user guidance.\n",
+                         encoding="utf-8")
+        after = bundle.assemble(source)
+        self.assertEqual(after["README.md"][0], guide.read_bytes())
+        self.assertNotEqual(after["README.md"], before["README.md"])
+        package = self.root / "package"
+        bundle.write_new(after, package)
+        self.assertEqual(check.check(package), [])
+
+        guide.unlink()
+        with self.assertRaises(FileNotFoundError):
+            bundle.assemble(source)
 
     def test_complete_manifest_detects_add_remove_content_and_mode(self):
         bundle.verify_manifest(self.payload)

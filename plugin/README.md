@@ -52,41 +52,17 @@ implement 按已有目标完成改动。要求一个已有方案的 HTML 说明�
 ## 安装与命名
 
 三个宿主使用同一份 [技能](skills/)，安装入口见 [INSTALL.md](INSTALL.md)。
-源码内的技能名为 `align`、`plan` 等短名；插件身份由宿主适配层处理：
+技能使用 `align`、`plan` 等短名；请按所用宿主选择或调用：
 
-| 宿主 | 人工调用示例 | 命名责任 |
-| --- | --- | --- |
-| Claude Code | `/zhixing:align` | 宿主添加插件命名空间 |
-| Codex / ChatGPT 桌面 | 选择知行插件中的 `align` 技能 | 宿主处理插件身份与技能选择 |
-| DSH | `/zhixing-align` | 注册器为平面技能目录添加一次插件前缀 |
+| 宿主 | 人工调用示例 |
+| --- | --- |
+| Claude Code | `/zhixing:align` |
+| Codex / ChatGPT 桌面 | 选择知行插件中的 `align` 技能 |
+| DSH | `/zhixing-align` |
 
 0.2.0 将源码技能从 `zhixing-align` 一类名称改为 `align`，并把安装根目录移到
 `plugin/`。升级后使用新的调用名；不保留重复注册的旧别名。
 六个人工入口在三个宿主中都关闭自动调用，其余能力保持可按需组合。
-
-## 开发与交付
-
-`skills/`、`principles/`、`references/` 是内容维护源；`plugin/` 是生成并跟随 PR
-审阅的安装包，不能手工编辑。版本只在 `VERSION` 维护。
-
-从最新 `origin/main` 建任务分支，执行本地检查后提交 PR。仓库开发约定见
-[AGENTS.md](https://github.com/Lanbasara/zhixing/blob/main/AGENTS.md)，结构见
-[架构说明](https://github.com/Lanbasara/zhixing/blob/main/docs/architecture.md)，发布见
-[RELEASING.md](https://github.com/Lanbasara/zhixing/blob/main/RELEASING.md)。
-
-```sh
-python3 -m pip install -r scripts/requirements-check.txt
-python3 scripts/check.py
-python3 scripts/bundle.py --out /path/to/new-package
-python3 scripts/qa.py --package /path/to/new-package
-# 新包验证通过后更新 plugin/，再运行完整的 PR 门禁：
-python3 scripts/qa.py
-```
-
-维护需要 Python 3.11+、Node.js 22+ 和 npm；技能使用无需运行这些开发工具。
-静态检查与离线测试验证内容、调用策略和打包契约。技能质量采用
-[独立任务检验](evaluations/README.md)，真实宿主发现与调用另行验收；CI 通过
-不代表已完成模型行为评价或实际安装。AI 与联网验收记录实际范围，不作为自动门禁。
 
 ## 思想来源
 

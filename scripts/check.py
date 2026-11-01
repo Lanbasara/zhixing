@@ -112,7 +112,8 @@ def check(root):
     for directory in ("skills", "principles", "references"):
         if not (root / directory).is_dir() or not any((root / directory).iterdir()):
             fail(root / directory, "missing or empty shared content directory")
-    for name in ("PHILOSOPHY.md", "README.md"):
+    required_docs = ("PHILOSOPHY.md", "README.md") + (("USAGE.md",) if is_source else ())
+    for name in required_docs:
         if not (root / name).is_file():
             fail(root / name, "missing product documentation")
 

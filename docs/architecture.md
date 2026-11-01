@@ -25,8 +25,10 @@ DSH catalog、package.json 和完整文件摘要 manifest.json。
 `plugin/` 的路径、字节和权限必须与重建结果一致；开发工具、维护技能、
 实验和凭据不进入包。npm 真正打包后的内容必须与这个目录完全一致。
 
-README、安装文档与行为检验方法随包分发，因为它们用于理解与检验技能。
-开发约定、架构、CI、发布脚本和 `.agents/skills/zhixing-release/` 只留在源码仓。
+`USAGE.md` 维护用户说明，构建时映射为包根目录的 `README.md`，保留同层相对引用。
+它与安装文档、行为检验方法随包分发，用于理解与检验技能。
+仓库 `README.md` 维护源码与开发入口；它和开发约定、架构、CI、发布脚本、
+`.agents/skills/zhixing-release/` 都只留在源码仓。修改这些维护材料不改变安装包。
 
 ## 开发与发布
 

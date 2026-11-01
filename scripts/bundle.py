@@ -94,7 +94,7 @@ def assemble(root):
         "PHILOSOPHY.md": "PHILOSOPHY.md",
         "INSTALL.md": "INSTALL.md",
         "evaluations/README.md": "evaluations/README.md",
-        "README.md": "README.md",
+        "USAGE.md": "README.md",
         "adapters/dsh.mjs": "host/dsh.mjs",
     }.items():
         payload[target] = read_file(root, source)
