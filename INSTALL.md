@@ -52,9 +52,12 @@ dsh plugin --profile web add 'git+https://github.com/Lanbasara/zhixing.git#TAG&p
 
 Desktop 可在插件市场添加索引源：
 `https://raw.githubusercontent.com/Lanbasara/zhixing-marketplace/main/dsh/index.json`。
-首个正式版本之前索引为空，不代表存在可安装发行版。
+市场索引在源 Release 成功后独立更新，安装来源固定到对应版本的提交。
 
 ## 升级与验收
+
+0.3.0 新增 `handoff`，可显式调用或按需组合，用于准备跨会话接续材料。
+升级后可选择该技能；原有技能调用名和安装布局保持兼容。
 
 0.2.0 重命名技能并改变安装根目录。移除旧源码包的安装项，再通过所用宿主
 安装完整新包，避免同一技能同时来自两份安装。重载后在新会话核对：
