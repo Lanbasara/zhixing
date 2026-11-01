@@ -15,7 +15,7 @@
 
 | 调用方式 | 能力 | 职责 |
 | --- | --- | --- |
-| 人工入口 | [setup](skills/setup/SKILL.md) | 建立适合项目的协作入口、知识结构和验证入口 |
+| 人工入口 | [setup](skills/setup/SKILL.md) | 沿用已有开发约定接入知行，按缺口补齐协作与验证入口 |
 | 人工入口 | [align](skills/align/SKILL.md) | 先研究，再围绕有影响的歧义与人深入讨论 |
 | 人工入口 | [specify](skills/specify/SKILL.md) | 将已确认的意图与决定写成可检验的规格 |
 | 人工入口 | [plan](skills/plan/SKILL.md) | 设计有反馈的实现切片、依赖与集成路径 |

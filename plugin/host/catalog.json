@@ -105,7 +105,7 @@
   },
   {
     "name": "setup",
-    "description": "为已有或新项目建立适量的协作入口、知识结构与验证入口。",
+    "description": "帮助已有或新项目接入知行，沿用有效约定并补齐协作与验证入口。",
     "invocation": {
       "modelInvocable": false,
       "userInvocable": true
