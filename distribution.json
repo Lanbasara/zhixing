@@ -1,0 +1,7 @@
+{
+  "name": "zhixing",
+  "description": "知行：可组合的工程技能与共享判断原则。",
+  "author": "Lanbasara",
+  "repository": "https://github.com/Lanbasara/zhixing",
+  "dsh": ">=0.2.1-rc.5 <0.3.0"
+}

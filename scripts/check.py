@@ -14,8 +14,8 @@ except ImportError:
     sys.exit("Install check dependencies: python3 -m pip install -r scripts/requirements-check.txt")
 
 
-EXPLICIT = {f"zhixing-{name}" for name in "setup align specify plan implement evolve".split()}
-AUTOMATIC = {f"zhixing-{name}" for name in "research model constrain verify review debug prototype explain report".split()}
+EXPLICIT = set("setup align specify plan implement evolve".split())
+AUTOMATIC = set("research model constrain verify review debug prototype explain report".split())
 SKILLS = EXPLICIT | AUTOMATIC
 RESOURCE_DIRS = {"skills", "principles", "references", ".claude-plugin", ".codex-plugin"}
 DOC_DIRS = {"docs", "evaluations"}
@@ -58,7 +58,8 @@ def check(root):
             return {}
 
     manifests = []
-    for host in (".claude-plugin", ".codex-plugin"):
+    is_source = (root / "VERSION").is_file()
+    for host in (() if is_source else (".claude-plugin", ".codex-plugin")):
         path = root / host / "plugin.json"
         if not path.is_file():
             fail(path, "missing manifest")
@@ -111,7 +112,7 @@ def check(root):
     for directory in ("skills", "principles", "references"):
         if not (root / directory).is_dir() or not any((root / directory).iterdir()):
             fail(root / directory, "missing or empty shared content directory")
-    for name in ("PHILOSOPHY.md", "AGENTS.md", "README.md"):
+    for name in ("PHILOSOPHY.md", "README.md"):
         if not (root / name).is_file():
             fail(root / name, "missing product documentation")
 
@@ -160,7 +161,7 @@ def check(root):
                     fail(path, f"resource does not exist: {target}")
 
     # Evidence, credentials, and generated state do not belong in the product.
-    forbidden = {"experiments", "reports", "research", "node_modules", ".venv"}
+    forbidden = {"experiments", "reports", "node_modules", ".venv"}
     for path in root.rglob("*"):
         relative = path.relative_to(root)
         if ".git" in relative.parts:
@@ -178,7 +179,7 @@ def main():
     if errors:
         print("\n".join(f"ERROR {error}" for error in errors), file=sys.stderr)
         return 1
-    print("PASS: 2 manifests, 15 skills, invocation policies, package resources and portable content")
+    print("PASS: 15 short skill names, invocation policies, references and portable content")
     return 0
 
 
