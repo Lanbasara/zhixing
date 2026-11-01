@@ -1,6 +1,6 @@
 ---
 name: zhixing-prototype
-description: 用可交互 HTML 原型探索界面、状态或方案选择，检验影响设计的具体假设。
+description: 在设计尚未确定、需要体验交互或比较方案时，用 HTML 原型检验界面、状态与行为假设。
 ---
 
 # 用原型回答设计问题

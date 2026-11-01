@@ -107,8 +107,12 @@ claude plugin validate . --json
 ## 思想来源
 
 知行吸收 [Matt Pocock 的 skills](https://github.com/mattpocock/skills) 中的深入对齐、
-领域建模、曳光弹与上下文管理，以及 [pstack](https://github.com/cursor/plugins/tree/main/pstack)
-对真实反馈、验证能力和可执行约束的重视；也吸收了 Jianwei 实践中关于专业责任、
+领域建模、曳光弹与上下文管理；其
+[Writing for Agents](https://github.com/mattpocock/skills/blob/main/skills/productivity/writing-for-agents/SKILL.md)
+进一步启发了阅读入口、信息组织、完成判断和指令贡献的表达。
+[pstack](https://github.com/cursor/plugins/tree/main/pstack) 对真实反馈、
+[可复跑验证方法](https://github.com/cursor/plugins/blob/main/pstack/skills/create-verification-skill/SKILL.md)
+和可执行约束的重视也被融入知行；同时吸收了 Jianwei 实践中关于专业责任、
 最小自洽指导和防止技能过拟合的判断。
 
 这些思想经过重新组织，不以复刻原仓库的目录或流程为目标。DRY 关注知识的维护源，

@@ -1,6 +1,6 @@
 ---
 name: zhixing-report
-description: 将研究或工程工作的结论与证据组织为可阅读、可分享的 HTML 报告。
+description: 将已有研究或工程证据整理为 HTML 报告，适用于需要查阅、比较或分享结论、来源与验证范围的请求。
 ---
 
 # 以 HTML 交付有依据的报告

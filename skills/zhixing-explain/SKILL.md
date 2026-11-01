@@ -1,6 +1,6 @@
 ---
 name: zhixing-explain
-description: 用 HTML 与适当交互解释工程方案、架构或机制，帮助读者理解关系和取舍。
+description: 将已有工程方案、架构或机制解释为 HTML，适用于读者需要理解运行关系、因果与取舍的请求。
 ---
 
 # 让方案容易理解
