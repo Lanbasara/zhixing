@@ -11,18 +11,6 @@
       "sha256": "d863b3fd8ad8877fcf442c323aa3f8544ea33a134452a0800b6085be0b416e00",
       "mode": 420
     },
-    "INSTALL.md": {
-      "sha256": "7f70cfcca24e22c975bf387833a9043a23c908f8c503f635d1760ff43ed557b6",
-      "mode": 420
-    },
-    "PHILOSOPHY.md": {
-      "sha256": "68c4969ec648ba914a4a4372a716532bd986d04e88759a8f40de08bd439ce274",
-      "mode": 420
-    },
-    "README.md": {
-      "sha256": "86941b845843ba875331c3d83176b47b66811e9aa287a6a85c20dd4ff920fab4",
-      "mode": 420
-    },
     "cordis.patch.yml": {
       "sha256": "b1d99216f9c55b8fcf34f379a9e61285201d050d8a9dd11735a121be52b3a144",
       "mode": 420
@@ -40,7 +28,7 @@
       "mode": 420
     },
     "package.json": {
-      "sha256": "f58dc4a9594efd7a7ec31fd5227bc7590287843754556e516f56daa3da9af34f",
+      "sha256": "7a2d6af53966633e48830a92c0c9b06240a846021b4de1e697f025d07598f0d2",
       "mode": 420
     },
     "plugin.json": {

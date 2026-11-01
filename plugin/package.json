@@ -22,9 +22,6 @@
   "files": [
     ".claude-plugin/plugin.json",
     ".codex-plugin/plugin.json",
-    "INSTALL.md",
-    "PHILOSOPHY.md",
-    "README.md",
     "cordis.patch.yml",
     "evaluations/README.md",
     "host/catalog.json",

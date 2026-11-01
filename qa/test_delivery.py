@@ -65,33 +65,35 @@ class DeliveryTests(unittest.TestCase):
         (package / "references/context.md").unlink()
         self.assertTrue(check.check(package))
 
-    def test_user_documentation_is_independent_of_maintainer_inputs(self):
+    def test_package_is_independent_of_repository_only_inputs(self):
         source = self.root / "source"
         shutil.copytree(bundle.ROOT, source, ignore=shutil.ignore_patterns(
             ".git", "plugin", "__pycache__", ".venv", ".env*", "node_modules"))
         before = bundle.assemble(source)
-        for name in ("README.md", "AGENTS.md", "RELEASING.md",
-                     ".agents/skills/zhixing-release/SKILL.md",
-                     ".github/workflows/ci.yml", "scripts/release.py", "qa/maintainer.txt"):
+        repository_only = ("README.md", "INSTALL.md", "PHILOSOPHY.md", "AGENTS.md",
+                           "RELEASING.md", "docs/architecture.md",
+                           ".agents/skills/zhixing-release/SKILL.md",
+                           ".github/workflows/ci.yml", "scripts/release.py", "qa/maintainer.txt")
+        for name in repository_only:
+            self.assertNotIn(name, before.keys())
             path = source / name
             path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text("Changed maintainer-only input\n", encoding="utf-8")
+            path.write_text("Changed repository-only input\n", encoding="utf-8")
         self.assertTrue(before == bundle.assemble(source),
-                        "Maintainer-only changes leaked into the published payload")
+                        "Repository-only changes leaked into the published payload")
+        for name in repository_only:
+            (source / name).unlink()
+        self.assertTrue(before == bundle.assemble(source),
+                        "Package assembly depends on repository-only inputs")
 
-        guide = source / "USAGE.md"
-        guide.write_text(guide.read_text(encoding="utf-8") + "\nUpdated user guidance.\n",
-                         encoding="utf-8")
-        after = bundle.assemble(source)
-        self.assertEqual(after["README.md"][0], guide.read_bytes())
-        self.assertNotEqual(after["README.md"], before["README.md"])
+        for name in ("evaluations/README.md", "references/verification-example/README.md"):
+            self.assertIn(name, before.keys())
         package = self.root / "package"
-        bundle.write_new(after, package)
+        bundle.write_new(before, package)
         self.assertEqual(check.check(package), [])
-
-        guide.unlink()
-        with self.assertRaises(FileNotFoundError):
-            bundle.assemble(source)
+        (package / "evaluations/README.md").unlink()
+        self.assertTrue(any("resource does not exist: ../evaluations/README.md" in error
+                            for error in check.check(package)))
 
     def test_complete_manifest_detects_add_remove_content_and_mode(self):
         bundle.verify_manifest(self.payload)
@@ -169,7 +171,7 @@ class DeliveryTests(unittest.TestCase):
 
     def test_committed_tampering_and_link_rejected(self):
         repo, _ = self.repo()
-        (repo / "plugin/README.md").write_text("changed")
+        (repo / "plugin/principles/knowledge.md").write_text("changed")
         self.git(repo, "add", ".")
         self.git(repo, "commit", "-m", "invalid payload")
         with self.assertRaises(ValueError):

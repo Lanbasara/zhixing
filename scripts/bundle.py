@@ -91,10 +91,7 @@ def assemble(root):
                 rel = path.relative_to(root).as_posix()
                 payload[rel] = read_file(root, rel)
     for source, target in {
-        "PHILOSOPHY.md": "PHILOSOPHY.md",
-        "INSTALL.md": "INSTALL.md",
         "evaluations/README.md": "evaluations/README.md",
-        "USAGE.md": "README.md",
         "adapters/dsh.mjs": "host/dsh.mjs",
     }.items():
         payload[target] = read_file(root, source)

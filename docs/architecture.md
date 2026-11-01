@@ -5,8 +5,8 @@
 
 ## 内容与宿主
 
-`skills/<短名>/SKILL.md` 是唯一技能正文；`PHILOSOPHY.md`、`principles/`、
-`references/` 保存共享判断与约定。正文保留相对引用，三端安装相同字节。
+`skills/<短名>/SKILL.md` 是唯一技能正文；`principles/`、`references/`
+保存技能引用的共享判断与约定。正文保留相对引用，三端安装相同字节。
 调用策略由技能 frontmatter 表达，现有 Codex policy 与之核对；DSH 目录从
 frontmatter 生成。Claude/Codex 负责插件命名空间，DSH 的平面注册表由
 `adapters/dsh.mjs` 添加一次 `zhixing-`，适配层不实现技能的专业行为。
@@ -25,10 +25,12 @@ DSH catalog、package.json 和完整文件摘要 manifest.json。
 `plugin/` 的路径、字节和权限必须与重建结果一致；开发工具、维护技能、
 实验和凭据不进入包。npm 真正打包后的内容必须与这个目录完全一致。
 
-`USAGE.md` 维护用户说明，构建时映射为包根目录的 `README.md`，保留同层相对引用。
-它与安装文档、行为检验方法随包分发，用于理解与检验技能。
-仓库 `README.md` 维护源码与开发入口；它和开发约定、架构、CI、发布脚本、
-`.agents/skills/zhixing-release/` 都只留在源码仓。修改这些维护材料不改变安装包。
+安装包只包含技能、技能引用的资源、宿主适配与交付元数据，不要求顶层说明文件。
+`README.md`、`INSTALL.md` 和原则索引 `PHILOSOPHY.md` 留在源码仓，分别承担
+使用与开发入口、安装说明和原则导航；修改它们不改变安装包。开发约定、架构、
+CI、发布脚本和 `.agents/skills/zhixing-release/` 也只留在源码仓。
+资源按用途与引用保留：`evaluations/README.md` 被技能设计原则引用，
+`references/verification-example/README.md` 被验证约定引用，因此两者仍随包分发。
 
 ## 开发与发布
 
