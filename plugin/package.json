@@ -1,0 +1,66 @@
+{
+  "name": "zhixing",
+  "version": "0.2.0",
+  "description": "知行：可组合的工程技能与共享判断原则。",
+  "author": "Lanbasara",
+  "license": "UNLICENSED",
+  "type": "module",
+  "main": "./host/dsh.mjs",
+  "homepage": "https://github.com/Lanbasara/zhixing",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lanbasara/zhixing.git"
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.5 <0.3.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    ".claude-plugin/plugin.json",
+    ".codex-plugin/plugin.json",
+    "cordis.patch.yml",
+    "evaluations/README.md",
+    "host/catalog.json",
+    "host/dsh.mjs",
+    "manifest.json",
+    "plugin.json",
+    "principles/change.md",
+    "principles/feedback.md",
+    "principles/knowledge.md",
+    "principles/reasoning.md",
+    "principles/responsibility.md",
+    "principles/skill-design.md",
+    "references/context.md",
+    "references/html.md",
+    "references/project-knowledge.md",
+    "references/verification-example/README.md",
+    "references/verification-example/notes.py",
+    "references/verification-example/verify.py",
+    "references/verification.md",
+    "skills/align/SKILL.md",
+    "skills/align/agents/openai.yaml",
+    "skills/constrain/SKILL.md",
+    "skills/debug/SKILL.md",
+    "skills/evolve/SKILL.md",
+    "skills/evolve/agents/openai.yaml",
+    "skills/explain/SKILL.md",
+    "skills/implement/SKILL.md",
+    "skills/implement/agents/openai.yaml",
+    "skills/model/SKILL.md",
+    "skills/plan/SKILL.md",
+    "skills/plan/agents/openai.yaml",
+    "skills/prototype/SKILL.md",
+    "skills/report/SKILL.md",
+    "skills/research/SKILL.md",
+    "skills/review/SKILL.md",
+    "skills/setup/SKILL.md",
+    "skills/setup/agents/openai.yaml",
+    "skills/specify/SKILL.md",
+    "skills/specify/agents/openai.yaml",
+    "skills/verify/SKILL.md"
+  ]
+}

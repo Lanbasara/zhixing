@@ -1,0 +1,175 @@
+{
+  "format": 1,
+  "name": "zhixing",
+  "version": "0.2.0",
+  "files": {
+    ".claude-plugin/plugin.json": {
+      "sha256": "6c7265159228acde165e8db2a8f608ff9b14d1cdf3ad8754b7fa59b7beacb4c8",
+      "mode": 420
+    },
+    ".codex-plugin/plugin.json": {
+      "sha256": "d863b3fd8ad8877fcf442c323aa3f8544ea33a134452a0800b6085be0b416e00",
+      "mode": 420
+    },
+    "cordis.patch.yml": {
+      "sha256": "b1d99216f9c55b8fcf34f379a9e61285201d050d8a9dd11735a121be52b3a144",
+      "mode": 420
+    },
+    "evaluations/README.md": {
+      "sha256": "7a017fdb7ac265da3cd4d0454fba25148b1b06dd035130eb309da1d80f28dfb1",
+      "mode": 420
+    },
+    "host/catalog.json": {
+      "sha256": "2bb4281170765e6517f3e459bd54d92a8f5039cf6e061a67f17f1d9147ad0e87",
+      "mode": 420
+    },
+    "host/dsh.mjs": {
+      "sha256": "c31df8c38a0b235c70162a473782f43aeb53fcfda8675d2cd8d139982af77afa",
+      "mode": 420
+    },
+    "package.json": {
+      "sha256": "7a2d6af53966633e48830a92c0c9b06240a846021b4de1e697f025d07598f0d2",
+      "mode": 420
+    },
+    "plugin.json": {
+      "sha256": "6c7265159228acde165e8db2a8f608ff9b14d1cdf3ad8754b7fa59b7beacb4c8",
+      "mode": 420
+    },
+    "principles/change.md": {
+      "sha256": "8a5f6288aa85cc520847123e372a2ea18cb4eb79222ec84e75ddba9ebc7098d5",
+      "mode": 420
+    },
+    "principles/feedback.md": {
+      "sha256": "fab8597e975773e3868ddbfd5cc75af0d0f37d64aa25fbc63edda31f803cabc5",
+      "mode": 420
+    },
+    "principles/knowledge.md": {
+      "sha256": "f3e2d65d44ebbf45dd9a8aa58ca07713bbdf61ce149e67d8551fa3bc420405b3",
+      "mode": 420
+    },
+    "principles/reasoning.md": {
+      "sha256": "f5636604847a83fbe8b65ed7b123c0e7696f08864a41e64a3aad67e66604bfc5",
+      "mode": 420
+    },
+    "principles/responsibility.md": {
+      "sha256": "5fa9ee895680d780b6b28e705277e4386626761daccd37ac94d71c69a19f783d",
+      "mode": 420
+    },
+    "principles/skill-design.md": {
+      "sha256": "0471587b304a79fe42a51a287a70f34be5a7d71bc1ea7da7caa9391c8a6af762",
+      "mode": 420
+    },
+    "references/context.md": {
+      "sha256": "4ca8cd3300e4666945fe64cbcc368b669765ad473b0992bedd25ace508a4af9f",
+      "mode": 420
+    },
+    "references/html.md": {
+      "sha256": "59337b0f973d077b5096b7c0171c80e80a1d8c2510c3f5440741b6d20963e37c",
+      "mode": 420
+    },
+    "references/project-knowledge.md": {
+      "sha256": "06ad6118b0d680888672b984cf3404959574a00d3392383023df7624363a7d6e",
+      "mode": 420
+    },
+    "references/verification-example/README.md": {
+      "sha256": "7528df0b5114ba1daf472762a34efcb56083ac9c41baf697d56b5c2f0cdf45c8",
+      "mode": 420
+    },
+    "references/verification-example/notes.py": {
+      "sha256": "a1115e44bbd705d5c829b90bb47a56425f2ab88f41ccfae7b9c4c1fc15ab7f66",
+      "mode": 420
+    },
+    "references/verification-example/verify.py": {
+      "sha256": "1fcef4f5ede4fbffd18b8382694c9ecf154723fa8a0f02c586c2081abb32f184",
+      "mode": 420
+    },
+    "references/verification.md": {
+      "sha256": "be36b6751a03eb616e1b6394cd44ce740e0fca4cfa701d570bcc0b53035a0c65",
+      "mode": 420
+    },
+    "skills/align/SKILL.md": {
+      "sha256": "65ac57d69827501ca9f81fd5f26cfbdfb0a80d0408c01b0155e15ea740b298b6",
+      "mode": 420
+    },
+    "skills/align/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "mode": 420
+    },
+    "skills/constrain/SKILL.md": {
+      "sha256": "d5c4ac35152e3b15ce3845441294defef1caa9639694fb8f93dd1382b2e8e91a",
+      "mode": 420
+    },
+    "skills/debug/SKILL.md": {
+      "sha256": "5761ef7ebbea1952fb16f71b348a4020d72ee5eec8e455c25180d695810b8887",
+      "mode": 420
+    },
+    "skills/evolve/SKILL.md": {
+      "sha256": "141b7fe9577805f5e6d3f345d594d694cc72cdd169783ca13c06b46c565b1a96",
+      "mode": 420
+    },
+    "skills/evolve/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "mode": 420
+    },
+    "skills/explain/SKILL.md": {
+      "sha256": "bb03e3dec6f7bcf5c4ca534d3cb9811c17a5750d80b256c117aa3a3a90245c69",
+      "mode": 420
+    },
+    "skills/implement/SKILL.md": {
+      "sha256": "9935795ebb5bf3748a52f8a7534a8df2a7d48a2d9d8e300fd47c9efa08472011",
+      "mode": 420
+    },
+    "skills/implement/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "mode": 420
+    },
+    "skills/model/SKILL.md": {
+      "sha256": "7f87b339a4f48aa21de492a5768aa55ee44dd47f8b35b53c375a6a5f4d7cf527",
+      "mode": 420
+    },
+    "skills/plan/SKILL.md": {
+      "sha256": "afbefbda655ff7c5e12651bb5b078fb1ce137bc06ba0bddbe67585fe12a08201",
+      "mode": 420
+    },
+    "skills/plan/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "mode": 420
+    },
+    "skills/prototype/SKILL.md": {
+      "sha256": "50161be5bc3f4170dfaa2a21fc1332dba2afac0a0b62283ddc505965b2027026",
+      "mode": 420
+    },
+    "skills/report/SKILL.md": {
+      "sha256": "dc236354c54ab43eea5adac80d25b3bb1a4e2eedc031719d571b023aab9673fd",
+      "mode": 420
+    },
+    "skills/research/SKILL.md": {
+      "sha256": "d7c118139e01d66509842ae81acc228ac2092e5d527738e7825b525626c0aa6e",
+      "mode": 420
+    },
+    "skills/review/SKILL.md": {
+      "sha256": "23ec58f0ac8a8acea8743be58408c7a379d280d8319ef7b29c7cf3c2528d0cb9",
+      "mode": 420
+    },
+    "skills/setup/SKILL.md": {
+      "sha256": "3a38f3b46bafeed281440de9e9148c0ff82854ea348595479918bd60b5fdfc2d",
+      "mode": 420
+    },
+    "skills/setup/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "mode": 420
+    },
+    "skills/specify/SKILL.md": {
+      "sha256": "6ccad24a3c402804b9413254a13812391ce9008c639aeba543d1f427ff5b2228",
+      "mode": 420
+    },
+    "skills/specify/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "mode": 420
+    },
+    "skills/verify/SKILL.md": {
+      "sha256": "b0b29eeac915608a1f1ef525b2b14f855a5f0b59d94280f4072b6fc6f84ab23c",
+      "mode": 420
+    }
+  }
+}

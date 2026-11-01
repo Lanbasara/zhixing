@@ -1,0 +1,3 @@
+- insert:
+    - id: zhixing-skills
+      name: ./host/dsh.mjs

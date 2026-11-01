@@ -1,0 +1,122 @@
+[
+  {
+    "name": "align",
+    "description": "通过研究与针对性讨论，澄清问题、领域含义和需要人决定的取舍。",
+    "invocation": {
+      "modelInvocable": false,
+      "userInvocable": true
+    }
+  },
+  {
+    "name": "constrain",
+    "description": "在重要工程性质需要保护、重复违规需要治理或已有检查需要审视时，设计并核验合适的结构与约束。",
+    "invocation": {
+      "modelInvocable": true,
+      "userInvocable": true
+    }
+  },
+  {
+    "name": "debug",
+    "description": "在报错、错误结果、偶发故障或性能退化需要定位时，建立反馈、调查原因，并按授权修复验证。",
+    "invocation": {
+      "modelInvocable": true,
+      "userInvocable": true
+    }
+  },
+  {
+    "name": "evolve",
+    "description": "根据真实问题改进技能、协作约定与工具，检验改动能否适用于不同情境。",
+    "invocation": {
+      "modelInvocable": false,
+      "userInvocable": true
+    }
+  },
+  {
+    "name": "explain",
+    "description": "将已有工程方案、架构或机制解释为 HTML，适用于读者需要理解运行关系、因果与取舍的请求。",
+    "invocation": {
+      "modelInvocable": true,
+      "userInvocable": true
+    }
+  },
+  {
+    "name": "implement",
+    "description": "在已授权目标内持续实现、集成、验证并交付完整工程改动。",
+    "invocation": {
+      "modelInvocable": false,
+      "userInvocable": true
+    }
+  },
+  {
+    "name": "model",
+    "description": "在术语含义冲突、对象身份或状态归属不清、模块接口需要设计时，建立可用的领域与模块模型。",
+    "invocation": {
+      "modelInvocable": true,
+      "userInvocable": true
+    }
+  },
+  {
+    "name": "plan",
+    "description": "为已明确的目标设计可验证的实现切片、依赖与集成路径。",
+    "invocation": {
+      "modelInvocable": false,
+      "userInvocable": true
+    }
+  },
+  {
+    "name": "prototype",
+    "description": "在设计尚未确定、需要体验交互或比较方案时，用 HTML 原型检验界面、状态与行为假设。",
+    "invocation": {
+      "modelInvocable": true,
+      "userInvocable": true
+    }
+  },
+  {
+    "name": "report",
+    "description": "将已有研究或工程证据整理为 HTML 报告，适用于需要查阅、比较或分享结论、来源与验证范围的请求。",
+    "invocation": {
+      "modelInvocable": true,
+      "userInvocable": true
+    }
+  },
+  {
+    "name": "research",
+    "description": "在需要查明实现、追溯设计理由或核对外部技术依据时，调查代码与原始资料，形成可追查的判断。",
+    "invocation": {
+      "modelInvocable": true,
+      "userInvocable": true
+    }
+  },
+  {
+    "name": "review",
+    "description": "审查 PR、分支或未提交变更，核对目标与约束，识别有具体触发条件和后果的缺陷。",
+    "invocation": {
+      "modelInvocable": true,
+      "userInvocable": true
+    }
+  },
+  {
+    "name": "setup",
+    "description": "为已有或新项目建立适量的协作入口、知识结构与验证入口。",
+    "invocation": {
+      "modelInvocable": false,
+      "userInvocable": true
+    }
+  },
+  {
+    "name": "specify",
+    "description": "将已确认的产品意图与决策正式化为可实现、可验证的规格。",
+    "invocation": {
+      "modelInvocable": false,
+      "userInvocable": true
+    }
+  },
+  {
+    "name": "verify",
+    "description": "在需要证明用户行为、核验修复或建立可复跑验证入口时，设计并执行验证，维护路径地图与证据。",
+    "invocation": {
+      "modelInvocable": true,
+      "userInvocable": true
+    }
+  }
+]
