@@ -5,7 +5,7 @@ import { pathToFileURL } from 'node:url';
 
 const root = realpathSync(resolve(process.argv[2]));
 const explicit = new Set(['setup', 'align', 'specify', 'plan', 'implement', 'evolve']);
-const automatic = ['research', 'model', 'constrain', 'verify', 'review', 'debug', 'prototype', 'explain', 'report'];
+const automatic = ['research', 'handoff', 'model', 'constrain', 'verify', 'review', 'debug', 'prototype', 'explain', 'report'];
 const expected = [...explicit, ...automatic].sort();
 const adapter = await import(pathToFileURL(resolve(root, 'host/dsh.mjs')).href);
 const registered = [];
@@ -20,4 +20,4 @@ for (const skill of registered) {
   assert.deepEqual(skill.resourceBase, { kind: 'directory', path: dirname(skill.path) });
   assert.deepEqual(skill.invocation, { modelInvocable: !explicit.has(shortName), userInvocable: true });
 }
-console.log('PASS: 15 DSH registrations, one prefix, 6 manual entries, original bodies and resource roots');
+console.log(`PASS: ${expected.length} DSH registrations, one prefix, ${explicit.size} manual entries, original bodies and resource roots`);

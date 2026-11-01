@@ -22,6 +22,7 @@
 | 人工入口 | [implement](skills/implement/SKILL.md) | 持续实现、集成、验证，直到完成或真实阻塞 |
 | 人工入口 | [evolve](skills/evolve/SKILL.md) | 从实际问题改进方法，检验改动能否迁移 |
 | 按需组合 | [research](skills/research/SKILL.md) | 调查代码、历史理由和外部依据 |
+| 按需组合 | [handoff](skills/handoff/SKILL.md) | 准备接续所需上下文，保留关键依据与按需回查入口 |
 | 按需组合 | [model](skills/model/SKILL.md) | 澄清领域概念、状态、归属和模块接口 |
 | 按需组合 | [constrain](skills/constrain/SKILL.md) | 让结构或检查承担重要工程约束 |
 | 按需组合 | [verify](skills/verify/SKILL.md) | 设计并执行验证，维护可复用的用户路径 |

@@ -20,7 +20,7 @@
       "mode": 420
     },
     "host/catalog.json": {
-      "sha256": "2bb4281170765e6517f3e459bd54d92a8f5039cf6e061a67f17f1d9147ad0e87",
+      "sha256": "e2cf029700a098ebece0c077b61986fc8676d951b65fbc21bf9291445cae2aa8",
       "mode": 420
     },
     "host/dsh.mjs": {
@@ -28,7 +28,7 @@
       "mode": 420
     },
     "package.json": {
-      "sha256": "7a2d6af53966633e48830a92c0c9b06240a846021b4de1e697f025d07598f0d2",
+      "sha256": "7a64e915aa2fc33cde569fb3049c6d9ca41365032639301c950e8641a8ce8527",
       "mode": 420
     },
     "plugin.json": {
@@ -113,6 +113,10 @@
     },
     "skills/explain/SKILL.md": {
       "sha256": "bb03e3dec6f7bcf5c4ca534d3cb9811c17a5750d80b256c117aa3a3a90245c69",
+      "mode": 420
+    },
+    "skills/handoff/SKILL.md": {
+      "sha256": "637a28299df12fc965c426cd7314b8c4dbc32000e4d6d8a02e18ad558fc155b7",
       "mode": 420
     },
     "skills/implement/SKILL.md": {
