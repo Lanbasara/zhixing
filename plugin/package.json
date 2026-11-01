@@ -48,6 +48,7 @@
     "skills/evolve/SKILL.md",
     "skills/evolve/agents/openai.yaml",
     "skills/explain/SKILL.md",
+    "skills/handoff/SKILL.md",
     "skills/implement/SKILL.md",
     "skills/implement/agents/openai.yaml",
     "skills/model/SKILL.md",

@@ -15,7 +15,7 @@ except ImportError:
 
 
 EXPLICIT = set("setup align specify plan implement evolve".split())
-AUTOMATIC = set("research model constrain verify review debug prototype explain report".split())
+AUTOMATIC = set("research handoff model constrain verify review debug prototype explain report".split())
 SKILLS = EXPLICIT | AUTOMATIC
 RESOURCE_DIRS = {"skills", "principles", "references", ".claude-plugin", ".codex-plugin"}
 DOC_DIRS = {"docs", "evaluations"}
@@ -180,7 +180,7 @@ def main():
     if errors:
         print("\n".join(f"ERROR {error}" for error in errors), file=sys.stderr)
         return 1
-    print("PASS: 15 short skill names, invocation policies, references and portable content")
+    print(f"PASS: {len(SKILLS)} short skill names, invocation policies, references and portable content")
     return 0
 
 

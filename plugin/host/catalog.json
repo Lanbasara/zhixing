@@ -40,6 +40,14 @@
     }
   },
   {
+    "name": "handoff",
+    "description": "为跨会话接续或转交工作准备必要上下文，保留容易丢失的判断依据，并提供按需回查的入口。",
+    "invocation": {
+      "modelInvocable": true,
+      "userInvocable": true
+    }
+  },
+  {
     "name": "implement",
     "description": "在已授权目标内持续实现、集成、验证并交付完整工程改动。",
     "invocation": {
