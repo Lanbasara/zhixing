@@ -120,7 +120,7 @@
       "mode": 420
     },
     "skills/implement/SKILL.md": {
-      "sha256": "a12f7668d15fbcdf29697ebf8fc56db29d88b7438a0160a72535eb9388fa6d12",
+      "sha256": "376baa60bd376e73cb78d5ab9843612fe24c2166343caef4413f6c8ef5094090",
       "mode": 420
     },
     "skills/implement/agents/openai.yaml": {
@@ -132,7 +132,7 @@
       "mode": 420
     },
     "skills/plan/SKILL.md": {
-      "sha256": "646912baac5217828deff2fa8cc28a70dc764fe3f387ae4471340484a8d96bf4",
+      "sha256": "c0977f4408a0be9022849e110e43adffced3a3f58b924e5a6eb69a2097e41f68",
       "mode": 420
     },
     "skills/plan/agents/openai.yaml": {
@@ -140,7 +140,7 @@
       "mode": 420
     },
     "skills/prototype/SKILL.md": {
-      "sha256": "78741478acb38de3c89b2de04b045366f534d0981609bd149142b570d1614d29",
+      "sha256": "1acad8f81db9bcaa83b0605c2087f9ad6ca99c1f286af46f84e13b50cab5b114",
       "mode": 420
     },
     "skills/report/SKILL.md": {
@@ -172,7 +172,7 @@
       "mode": 420
     },
     "skills/verify/SKILL.md": {
-      "sha256": "60ea589918f4d40acb1d68f4506a2ed90d7cbf92cd104844af177ea98ae3d6ac",
+      "sha256": "8fedc0b48b1f6e2131f1f363e7255008bc15c94af9386eb013c3463491b825f2",
       "mode": 420
     }
   }
