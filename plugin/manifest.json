@@ -44,7 +44,7 @@
       "mode": 420
     },
     "principles/knowledge.md": {
-      "sha256": "f3e2d65d44ebbf45dd9a8aa58ca07713bbdf61ce149e67d8551fa3bc420405b3",
+      "sha256": "9cbdfb08eda02d8afb4a0028e685a5dcf19a35e088dd67c2a995880e2f8ef30b",
       "mode": 420
     },
     "principles/reasoning.md": {
@@ -60,7 +60,7 @@
       "mode": 420
     },
     "references/context.md": {
-      "sha256": "4ca8cd3300e4666945fe64cbcc368b669765ad473b0992bedd25ace508a4af9f",
+      "sha256": "986a477ece7e38bddc23612e99d143587bb0f1b3a9f1e361e4449f50283570b1",
       "mode": 420
     },
     "references/html.md": {
@@ -68,7 +68,7 @@
       "mode": 420
     },
     "references/project-knowledge.md": {
-      "sha256": "06ad6118b0d680888672b984cf3404959574a00d3392383023df7624363a7d6e",
+      "sha256": "12739943e8b2203db8a33bacf5f4c143af5985db4344dec458d73496f2d861db",
       "mode": 420
     },
     "references/verification-example/README.md": {
@@ -88,7 +88,7 @@
       "mode": 420
     },
     "skills/align/SKILL.md": {
-      "sha256": "8e812dd66122a31354ae4609b02ee5ec551598ed93462397c5bf053d32ee591e",
+      "sha256": "4f516425ed2a0838776e277baae6589db1ad857ce052a7d4ebc8b4e8098b715e",
       "mode": 420
     },
     "skills/align/agents/openai.yaml": {
@@ -120,7 +120,7 @@
       "mode": 420
     },
     "skills/implement/SKILL.md": {
-      "sha256": "9935795ebb5bf3748a52f8a7534a8df2a7d48a2d9d8e300fd47c9efa08472011",
+      "sha256": "57c2b4c454d1cf29583d5c506660c7cc5d1b22129cbc181733b466c741d01571",
       "mode": 420
     },
     "skills/implement/agents/openai.yaml": {
@@ -132,7 +132,7 @@
       "mode": 420
     },
     "skills/plan/SKILL.md": {
-      "sha256": "afbefbda655ff7c5e12651bb5b078fb1ce137bc06ba0bddbe67585fe12a08201",
+      "sha256": "646912baac5217828deff2fa8cc28a70dc764fe3f387ae4471340484a8d96bf4",
       "mode": 420
     },
     "skills/plan/agents/openai.yaml": {
@@ -140,7 +140,7 @@
       "mode": 420
     },
     "skills/prototype/SKILL.md": {
-      "sha256": "50161be5bc3f4170dfaa2a21fc1332dba2afac0a0b62283ddc505965b2027026",
+      "sha256": "ebd48870bebc6460e5ff474be109832cd8c8ffd6499b6a5ed8b81fd145134612",
       "mode": 420
     },
     "skills/report/SKILL.md": {
@@ -152,7 +152,7 @@
       "mode": 420
     },
     "skills/review/SKILL.md": {
-      "sha256": "23ec58f0ac8a8acea8743be58408c7a379d280d8319ef7b29c7cf3c2528d0cb9",
+      "sha256": "c502a8a2f3b95d1d3d71bed69a2f9cf75bc90faefb025ed60b1d8f3b2cdfae20",
       "mode": 420
     },
     "skills/setup/SKILL.md": {
@@ -164,7 +164,7 @@
       "mode": 420
     },
     "skills/specify/SKILL.md": {
-      "sha256": "6ccad24a3c402804b9413254a13812391ce9008c639aeba543d1f427ff5b2228",
+      "sha256": "44c86d46b95637ae254e7f374fc675f277571a6a2575380cb0160b4451abf49a",
       "mode": 420
     },
     "skills/specify/agents/openai.yaml": {
@@ -172,7 +172,7 @@
       "mode": 420
     },
     "skills/verify/SKILL.md": {
-      "sha256": "b0b29eeac915608a1f1ef525b2b14f855a5f0b59d94280f4072b6fc6f84ab23c",
+      "sha256": "60ea589918f4d40acb1d68f4506a2ed90d7cbf92cd104844af177ea98ae3d6ac",
       "mode": 420
     }
   }
