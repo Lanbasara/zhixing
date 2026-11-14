@@ -40,7 +40,7 @@ claude --plugin-dir /path/to/zhixing/plugin
 
 ## DeepSeek Harness
 
-适配目标从 DSH 0.2.1-rc.5 起，范围由包的 engines.dsh 声明；实际宿主版本
+适配目标从 DSH 0.2.1-rc.4 起，范围由包的 engines.dsh 声明；实际宿主版本
 变化后需要重新验证加载。DSH 在当前 profile 中启用 bundle，并注入 skills 服务。
 调用例子为 `/zhixing-align`、`/zhixing-implement`，前缀只由注册器添加一次。
 
@@ -69,3 +69,6 @@ Desktop 可在插件市场添加索引源：
 
 0.3.4 改进 `align` 的提问顺序。先讨论会改变范围的决定，再根据回答追问
 具体行为和承诺。
+
+0.3.6 将 DSH 兼容下限从 0.2.1-rc.5 放宽到 0.2.1-rc.4；技能、调用名与
+安装布局不变。

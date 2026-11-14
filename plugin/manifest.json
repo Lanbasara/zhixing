@@ -1,14 +1,14 @@
 {
   "format": 1,
   "name": "zhixing",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "files": {
     ".claude-plugin/plugin.json": {
-      "sha256": "b30fc47c204b0b56e909187168a45fc21d81c59631205def4fa8af5cf1ea2d88",
+      "sha256": "c4400ea41df8f12536c4a369436d86c58c471e1f6e705254eec5415338b35405",
       "mode": 420
     },
     ".codex-plugin/plugin.json": {
-      "sha256": "1fc353210f45820382aefc6e4441f5ce812fdf07c3e4a80391ab5dd795d91349",
+      "sha256": "0d94586104c71492581a4ed67f8ef5aa18af97b51a64212ecab196702e8961c2",
       "mode": 420
     },
     "cordis.patch.yml": {
@@ -28,11 +28,11 @@
       "mode": 420
     },
     "package.json": {
-      "sha256": "a75a62ac4a5b1178171aadf02b1f7e1aae3c9fc41057c44e9213c28e2dd0279b",
+      "sha256": "7744f7fa0fe28c96695a60a6e0a413e2bf5fef547d4770e252917e3337f91ff1",
       "mode": 420
     },
     "plugin.json": {
-      "sha256": "b30fc47c204b0b56e909187168a45fc21d81c59631205def4fa8af5cf1ea2d88",
+      "sha256": "c4400ea41df8f12536c4a369436d86c58c471e1f6e705254eec5415338b35405",
       "mode": 420
     },
     "principles/change.md": {
